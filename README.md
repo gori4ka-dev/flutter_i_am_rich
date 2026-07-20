@@ -42,8 +42,8 @@ git checkout ep04
 
 ## 🛠 Стек
 
-- Flutter / Dart
-- (дополнить: минимальная версия Flutter SDK, целевые платформы — Android/iOS/Web)
+- Flutter 3.44.1 / Dart 3.12.1
+- Android/iOS/Web
 
 
 ## 🤝 Обратная связь
