@@ -20,7 +20,7 @@
 |--------|---|---|---|
 | Ep.04  | [YouTube](https://youtu.be/8Z-DTKMt8s4) | [`25c492d`](https://github.com/gori4ka-dev/flutter_i_am_rich/tree/25c492ddf3df156663c1f0cfdcda96e518456125) | Базовые виджеты Flutter, старт приложения "I Am Rich" |
 | Ep.05  | [YouTube](https://youtu.be/rjgP8YI_1Z4) | [`f26242c`](https://github.com/gori4ka-dev/flutter_i_am_rich/tree/f26242c24318f2ddcbd4d0911305b6d4d17503bc) | Продолжение работы над "I Am Rich" |
-| Ep.06  | [YouTube](https://youtu.be/nVRTbbCe-3M) | [`4ffc459`](https://github.com/gori4ka-dev/flutter_i_am_rich/commit/4ffc459a35354ca00a2bb8f44291c876a722186f) | Добавляем if, меняем текст и цвет экрана |
+| Ep.06  | [YouTube](https://youtu.be/nVRTbbCe-3M) | [`4ffc459`](https://github.com/gori4ka-dev/flutter_i_am_rich/tree/4ffc459a35354ca00a2bb8f44291c876a722186f) | Добавляем if, меняем текст и цвет экрана |
 
 > Список пополняется с каждым новым эпизодом.
 
