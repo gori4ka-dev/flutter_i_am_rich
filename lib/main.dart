@@ -5,7 +5,7 @@ void main() {
 }
 
 class IAmRichApp extends StatefulWidget {
-  IAmRichApp({super.key});
+  const IAmRichApp({super.key});
 
   @override
   State<IAmRichApp> createState() => _IAmRichAppState();
@@ -14,11 +14,58 @@ class IAmRichApp extends StatefulWidget {
 class _IAmRichAppState extends State<IAmRichApp> {
   int money = 0;
 
+  String getStatus(){
+    if(money >= 1000){
+      return 'I AM RICH';
+    }else if(money >= 500){
+      return 'Можно пить кофе';
+    }else if(money >= 200){
+      return 'Уже лучше';
+    }else{
+      return 'Пока не богат';
+    }
+  }
+
+  Color getBackgroundColor(){
+    if(money >= 1000){
+      return Colors.amber.shade700;
+    }else if(money >= 500){
+      return Colors.blue.shade800 ;
+    }else if(money >= 200){
+      return Colors.green.shade700;
+    }else{
+      return Colors.blueGrey.shade900;
+    }
+  }
+
+  String getEmoji(){
+    if(money >= 1000){
+      return '💎';
+    }else if(money >= 500){
+      return '😎';
+    }else if(money >= 200){
+      return '😊';
+    }else{
+      return '😢';
+    }
+  }
+
+  ElevatedButton myButton(){
+    return   ElevatedButton(
+      onPressed: () {
+        setState(() {
+          money += 100;
+        });
+      },
+      child: Text('Стать богаче'),
+    );
+  }
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.blueGrey[700],
+        backgroundColor: getBackgroundColor(),
         appBar: AppBar(
           title: Text('I Am Rich'),
           centerTitle: true,
@@ -28,10 +75,14 @@ class _IAmRichAppState extends State<IAmRichApp> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset('assets/images/diamond.png', width: 180),
-              SizedBox(height: 30),
               Text(
-                'I Am Rich',
+                getEmoji(),
+                style: TextStyle(
+                  fontSize: 180,
+                ),
+              ),
+              Text(
+                getStatus(),
                 style: TextStyle(
                   fontSize: 40,
                   color: Colors.white,
@@ -58,7 +109,7 @@ class _IAmRichAppState extends State<IAmRichApp> {
                       });
                     },
                     child: Text('Потратить всё состояние'),
-                  )
+                  ),
                 ],
               ),
               SizedBox(height: 20),
